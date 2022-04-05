@@ -5,7 +5,7 @@ public class Programa {
 
 public static void main(String[] args) {
 		
-		int len = 1;
+		int len = 5;
 		String[] matriculas = new String[len];
 		String[] nomes = new String[len];
 		double[][] notas = new double[len][2];
@@ -15,7 +15,7 @@ public static void main(String[] args) {
 		
 		for(int i=0; i < len; i++) {
 			System.out.println("Aluno " + (i + 1));
-			System.out.print("Informe matrícula: ");
+			System.out.print("Informe matrÃ­cula: ");
 
 			matriculas[i] = scan.next();
 			
@@ -36,7 +36,7 @@ public static void main(String[] args) {
 			double media = (notas[i][0] + notas[i][1]) / 2;	
 	        aprovado = "Aprovado: " + ((media >= 6) ? "( X ) Sim (  ) Nao": "(  ) Sim ( X ) Nao");
 	       
-	        String resultado = "Matrícula: " + matriculas[i];
+	        String resultado = "MatrÃ­cula: " + matriculas[i];
 	        resultado += "\nNome: " + nomes[i];
 	        resultado += "\n" + aprovado;
 	        resultado += "\nNota Final: " + media; 			
