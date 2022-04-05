@@ -1,4 +1,3 @@
-package exercicio;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -10,7 +9,7 @@ public class Programa {
 
 	public static void main(String[] args) throws FileNotFoundException {
 		
-		File arquivo = new File("C:\\Users\\Aluno\\eclipse-workspace\\ExercicioAula\\src\\exercicio\\grupos-tabulados.txt");
+		File arquivo = new File("C:\\Users\\Aluno\\eclipse-workspace\\Aulas\\src\\grupos-tabulados.txt");
 		Scanner scan = new Scanner(arquivo);
 		scan.nextLine();
 		
@@ -51,7 +50,7 @@ public class Programa {
 	public static boolean nomeExiste(List<Grupo> lista, String nome) {
 		
 		for(Grupo grupo : lista) {
-			if (grupo.getNome().equals(nome)){
+			if (grupo.nome.equals(nome)){
 				return true;
 			}
 		}
